@@ -141,27 +141,56 @@
       /*
       Custom code
       */
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
       .download-button {
-        width: 10rem;
+        width: 50vw;
+        min-width: 10rem;
+        max-width: 16rem;
+        margin: 1rem;
+      }
+      .logo {
+        width: 100%;
+        min-width: 18rem;
+        max-width: 40rem;
+      }
+      .buttons-container {
+        height: 50vh;
+        width: 90vw;
+        max-width: 40rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* justify-content: center; */
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
       }
     </style>
   </head>
   <body>
     <script src="index.js"></script>
-    <div>
-      <p>Lorem ipsum dolor sit amet</p>
-      <img
-        class="download-button"
-        src="image/android.svg"
-        alt="Get the app on Google Play"
-      />
+    <div class="container">
+      <img class="logo" src="image/logo.svg" alt="Rumbella" />
 
-      <img
-        class="download-button"
-        src="image/ios-on-black.svg"
-        alt="Download on
-      the Apple App Store"
-      />
+      <div class="buttons-container">
+        <img
+          class="download-button"
+          src="image/android.svg"
+          alt="Get the app on Google Play"
+        />
+
+        <img
+          class="download-button"
+          src="image/ios-on-black.svg"
+          alt="Download on the Apple App Store"
+        />
+      </div>
     </div>
   </body>
 </html>
